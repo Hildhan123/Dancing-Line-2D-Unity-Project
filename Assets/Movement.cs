@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-    public float moveSpeed = 5f; //mengatur kecepatan object player
+    public static float moveSpeed = 5f; //mengatur kecepatan object player
     public Rigidbody2D rb; //deklarasi Rigidbody2D
     Vector2 movement; //deklarasi movement
     public int arah; //deklarasi arah 
@@ -11,7 +11,7 @@ public class Movement : MonoBehaviour
     {
         if (arah==0)
         {
-            movement.x = 1f;
+            movement.x = 0f;
             movement.y = 1f;
             //bergerah ke kanan 45 derajat
         }
@@ -19,7 +19,7 @@ public class Movement : MonoBehaviour
         if (arah==1)
         {
             movement.x = -1f;
-            movement.y = 1f;
+            movement.y = 0f;
             //bergerak ke kiri 45 derajat
         }
     }
