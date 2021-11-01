@@ -1,35 +1,36 @@
 using UnityEngine.SceneManagement;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameOver : MonoBehaviour
 {
-    public static bool isGameOver;
-    public GameObject gameOverScreen;
-    private void Awake()
+    bool gameselesai = false;
+    public GameObject Gameoverpanel;
+    public GameObject player;
+    public Playercollision spawn;
+
+
+    public void Endgame()
     {
-        isGameOver = false;
-    }
-
-
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if (isGameOver)
+        if(gameselesai == false)
         {
-        gameOverScreen.SetActive(true);
+            gameselesai = true;
+            Debug.Log("selesai");
+            Gameoverpanel.SetActive(true);
         }
     }
 
-    public void ReplayLevel1()
+    public void restart()
     {
-        Debug.Log("berhasil");
-        SceneManager.LoadScene("Level1");
+        SceneManager.LoadScene( SceneManager.GetActiveScene().name);
+    }
+
+    public void checkpoint()
+    {
+        player.transform.position = spawn.spawnPoint;
+        gameselesai = false;
+        Gameoverpanel.SetActive(false);
+
     }
 }
+    

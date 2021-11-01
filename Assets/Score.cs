@@ -1,0 +1,22 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+
+public class Score : MonoBehaviour
+{
+
+    public Transform Player;
+    public Text scoreText;
+    //public string x,y;
+    // Update is called once per frame
+    void Update()
+    {
+        scoreText.text = "Score " + Player.position.y.ToString("0");
+        //y = Player.position.y.ToString("0");
+        //x = (Player.position.x.ToString("0"));
+        //scoreText = x +  y;
+        //Debug.Log(Player.position);
+    }
+
+}
