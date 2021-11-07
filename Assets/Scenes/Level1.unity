@@ -3837,6 +3837,7 @@ EdgeCollider2D:
   - {x: -1.408744, y: 0.54854685}
   - {x: -1.4184369, y: 0.4397739}
   - {x: -0.49715626, y: 0.4397829}
+<<<<<<< HEAD
   - {x: -0.50094116, y: -0.49982285}
   - {x: 0.49805292, y: -0.49964643}
   - {x: 0.49297065, y: 0.51745737}
@@ -3901,6 +3902,9 @@ EdgeCollider2D:
   - {x: -33.987305, y: 3.5590844}
   - {x: -33.98917, y: 4.0106483}
   - {x: -34.168774, y: 4.068207}
+=======
+  - {x: -0.49426985, y: -0.49943575}
+>>>>>>> e5521deb9d58b9fc57a597d1518d8f54df087318
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
@@ -4040,6 +4044,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+<<<<<<< HEAD
 --- !u!1 &1875660109
 GameObject:
   m_ObjectHideFlags: 0
@@ -4123,6 +4128,8 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+>>>>>>> e5521deb9d58b9fc57a597d1518d8f54df087318
 --- !u!1 &1892140515
 GameObject:
   m_ObjectHideFlags: 0

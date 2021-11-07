@@ -9,7 +9,11 @@ public class AudioScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+<<<<<<< HEAD
         //Debug.Log(src.clip.length);
+=======
+        Debug.Log(src.clip.length);
+>>>>>>> e5521deb9d58b9fc57a597d1518d8f54df087318
         
     }
 
@@ -17,6 +21,10 @@ public class AudioScript : MonoBehaviour
     void Update()
     {
         //src.PlayScheduled(1);
+<<<<<<< HEAD
         //src.Play;
+=======
+        src.Play;
+>>>>>>> e5521deb9d58b9fc57a597d1518d8f54df087318
     }
 }
