@@ -15,7 +15,6 @@ public class GameOver : MonoBehaviour
         if(gameselesai == false)
         {
             gameselesai = true;
-            Debug.Log("selesai");
             Gameoverpanel.SetActive(true);
         }
     }
