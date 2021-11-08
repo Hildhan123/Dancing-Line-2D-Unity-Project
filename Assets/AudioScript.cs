@@ -10,7 +10,8 @@ public class AudioScript : MonoBehaviour
     void Start()
     {
         //Debug.Log(src.clip.length);
-        
+        //src.Play();
+        //src.SetScheduledStartTime(AudioSettings.dspTime+(34.57f-13.21f));
     }
 
     // Update is called once per frame
@@ -18,5 +19,7 @@ public class AudioScript : MonoBehaviour
     {
         //src.PlayScheduled(1);
         //src.Play;
+        //Debug.Log(src.time);
+        
     }
 }

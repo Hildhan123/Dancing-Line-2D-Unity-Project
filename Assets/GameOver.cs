@@ -8,6 +8,9 @@ public class GameOver : MonoBehaviour
     public GameObject Gameoverpanel;
     public GameObject player;
     public Playercollision spawn;
+    public AudioSource src2;
+    public AudioSource src1;
+    public TrailRenderer tr;
 
 
     public void Endgame()
@@ -29,7 +32,9 @@ public class GameOver : MonoBehaviour
         player.transform.position = spawn.spawnPoint;
         gameselesai = false;
         Gameoverpanel.SetActive(false);
-
+        src1.Stop();
+        src2.Play();
+        tr.Clear();
     }
 }
     

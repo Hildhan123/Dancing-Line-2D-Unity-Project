@@ -9,6 +9,7 @@ public class Playercollision : MonoBehaviour
     public  GameObject Checkpoints;
     public GameObject Checkpointpanel;
     public Vector2 spawnPoint;
+    public AudioSource src;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -23,6 +24,8 @@ public class Playercollision : MonoBehaviour
             spawnPoint = Checkpoints.transform.position;
             Checkpointpanel.SetActive(true);
             Destroy(Checkpoints);
+            Debug.Log(src.time);
+            //33.792
         }
     }
    
