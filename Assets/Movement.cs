@@ -42,6 +42,10 @@ public class Movement : MonoBehaviour
         }
          
     }
+    public void checkpoint()
+    {
+        arah=0;
+    }
 }
 
  /*if (Input.GetKey("z"))

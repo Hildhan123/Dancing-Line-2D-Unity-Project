@@ -15,7 +15,7 @@ public class Playercollision : MonoBehaviour
     {
         if(collision.transform.tag == "Enemy")
         {
-            //movement.enabled = false;
+            movement.enabled = false;
             FindObjectOfType<GameOver>().Endgame();
         }
 
