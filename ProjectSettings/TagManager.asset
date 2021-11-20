@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Enemy
   - Checkpoint
+  - Merah
   layers:
   - Default
   - TransparentFX
@@ -42,4 +43,34 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Paling jos
+    uniqueID: 2210934453
+    locked: 0
+  - name: New Layer 2
+    uniqueID: 1805491167
+    locked: 0
+  - name: New Layer 3
+    uniqueID: 713229707
+    locked: 0
+  - name: New Layer 4
+    uniqueID: 10773169
+    locked: 0
+  - name: New Layer 5
+    uniqueID: 2263122681
+    locked: 0
+  - name: New Layer 6
+    uniqueID: 1844545505
+    locked: 0
+  - name: New Layer 7
+    uniqueID: 854597871
+    locked: 0
+  - name: New Layer 8
+    uniqueID: 3233015401
+    locked: 0
+  - name: New Layer 9
+    uniqueID: 971199645
+    locked: 0
+  - name: New Layer 10
+    uniqueID: 1822389691
     locked: 0
