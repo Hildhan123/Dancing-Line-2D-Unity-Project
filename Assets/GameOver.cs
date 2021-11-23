@@ -13,6 +13,7 @@ public class GameOver : MonoBehaviour
     public TrailRenderer tr;
     public Text text;
     int onetime = 1;
+    public GameObject FinishPanel;
 
     public void Start()
     {
@@ -57,6 +58,11 @@ public class GameOver : MonoBehaviour
         src1.Stop();
         src2.Play();
         tr.Clear();
+    }
+
+    public void Finish()
+    {
+        FinishPanel.SetActive(true);
     }
 }
     

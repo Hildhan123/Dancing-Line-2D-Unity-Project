@@ -816,6 +816,8 @@ MonoBehaviour:
   Checkpoints: {fileID: 0}
   Checkpointpanel: {fileID: 0}
   spawnPoint: {x: 0, y: 0}
+  src: {fileID: 0}
+  Finish: {fileID: 0}
 --- !u!96 &6657296367779354041
 TrailRenderer:
   serializedVersion: 2
@@ -955,6 +957,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Player: {fileID: 6657296367779354036}
   scoreText: {fileID: 6657296366646197583}
+  scoreText1: {fileID: 0}
 --- !u!1 &6657296368054816696
 GameObject:
   m_ObjectHideFlags: 0

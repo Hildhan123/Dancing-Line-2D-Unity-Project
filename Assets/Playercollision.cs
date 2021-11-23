@@ -10,6 +10,7 @@ public class Playercollision : MonoBehaviour
     public GameObject Checkpointpanel;
     public Vector2 spawnPoint;
     public AudioSource src;
+    public GameObject Finish;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -26,6 +27,22 @@ public class Playercollision : MonoBehaviour
             Destroy(Checkpoints);
             Debug.Log(src.time);
             //33.792
+        }
+
+        if(collision.transform.tag == "Finish")
+        {
+            movement.enabled = false;
+            FindObjectOfType<GameOver>().Finish();
+            Destroy(Finish);
+            // Unlock = 1;
+            // int currentLevel = SceneManager.GetActiveScene().buildIndex;
+            // if(currentLevel >= PlayerPrefs.GetInt("Levellock"))
+            // {
+            //     PlayerPrefs.SetInt("Levellock",currentLevel + 1);
+                
+            //     //for to go next level
+            //     SceneManager.LoadScene(currentLevel + 1);
+            // }
         }
     }
    
