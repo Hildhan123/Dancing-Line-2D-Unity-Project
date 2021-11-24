@@ -688,7 +688,7 @@ AudioSource:
   m_GameObject: {fileID: 73273096}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 9fa92af032925254983588d33720d481, type: 2}
   m_audioClip: {fileID: 8300000, guid: 2c618dbccc7af66488ea7bb63a0fdc22, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -2560,7 +2560,7 @@ SpriteRenderer:
   m_Size: {x: 99.329994, y: 70.18091}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &286774360
@@ -10180,25 +10180,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1646882463 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6657296367048004403, guid: 2c21ef333cfa90d47be626844d347ef9, type: 3}
-  m_PrefabInstance: {fileID: 6657296367212351091}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1646882464
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1646882463}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 882ced484d037a847b818f2171e532d4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  releasedLevel: 2
-  nextLevel: Level2
 --- !u!1 &1649573339
 GameObject:
   m_ObjectHideFlags: 0
@@ -14213,6 +14194,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 6657296366749363649, guid: 2c21ef333cfa90d47be626844d347ef9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6657296367048004403, guid: 2c21ef333cfa90d47be626844d347ef9, type: 3}
       propertyPath: m_TagString
       value: Enemy
@@ -14472,11 +14457,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8371928439659485651, guid: 756196f5836c6c3439a74e643d3e98fd, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.46
+      value: -1.4
       objectReference: {fileID: 0}
     - target: {fileID: 8371928439659485651, guid: 756196f5836c6c3439a74e643d3e98fd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 10.86
+      value: 19.5
       objectReference: {fileID: 0}
     - target: {fileID: 8371928439659485651, guid: 756196f5836c6c3439a74e643d3e98fd, type: 3}
       propertyPath: m_LocalPosition.z
