@@ -7,10 +7,10 @@ public class GameOver : MonoBehaviour
     bool gameselesai = false;
     public GameObject Gameoverpanel;
     public GameObject player;
-    public Playercollision spawn;
+    private Vector2 spawn;
     public AudioSource src2;
     public AudioSource src1;
-    public TrailRenderer tr;
+    private TrailRenderer tr;
     public Text text;
     int onetime = 1;
     public GameObject FinishPanel;
@@ -18,6 +18,7 @@ public class GameOver : MonoBehaviour
     public void Start()
     {
         Time.timeScale = 0;
+        //agar waktu berhenti
     }
     
     public void Update()
@@ -29,7 +30,6 @@ public class GameOver : MonoBehaviour
                 Destroy(text);
                 src1.Play();
                 Time.timeScale = 1; 
-                Debug.Log(src1.time);
                 onetime++;
             }
         }
@@ -50,7 +50,9 @@ public class GameOver : MonoBehaviour
 
     public void checkpoint()
     {
-        player.transform.position = spawn.spawnPoint;
+        spawn = FindObjectOfType<Playercollision>().spawnPoint;
+        tr = FindObjectOfType<TrailRenderer>();
+        player.transform.position = spawn;
         gameselesai = false;
         Gameoverpanel.SetActive(false);
         FindObjectOfType<Movement>().arah = 0;
@@ -58,6 +60,10 @@ public class GameOver : MonoBehaviour
         src1.Stop();
         src2.Play();
         tr.Clear();
+        FindObjectOfType<Animasi>().restartpopup();
+        FindObjectOfType<GameManager>().spawnpoint = true;
+        FindObjectOfType<Movement>().Timer = 33.80222f;
+        
     }
 
     public void Finish()

@@ -6,8 +6,8 @@ public class Playercollision : MonoBehaviour
 {
     public Movement movement;
     public GameOver gameManager;
-    public  GameObject Checkpoints;
-    public GameObject Checkpointpanel;
+    public GameObject Checkpoints;
+    public GameObject Checkpointbutton;
     public Vector2 spawnPoint;
     public AudioSource src;
     public GameObject Finish;
@@ -23,10 +23,8 @@ public class Playercollision : MonoBehaviour
         if(collision.transform.tag == "Checkpoint")
         {
             spawnPoint = Checkpoints.transform.position;
-            Checkpointpanel.SetActive(true);
+            Checkpointbutton.SetActive(true);
             Destroy(Checkpoints);
-            Debug.Log(src.time);
-            //33.792
         }
 
         if(collision.transform.tag == "Finish")
@@ -34,17 +32,12 @@ public class Playercollision : MonoBehaviour
             movement.enabled = false;
             FindObjectOfType<GameOver>().Finish();
             Destroy(Finish);
-            // Unlock = 1;
-            // int currentLevel = SceneManager.GetActiveScene().buildIndex;
-            // if(currentLevel >= PlayerPrefs.GetInt("Levellock"))
-            // {
-            //     PlayerPrefs.SetInt("Levellock",currentLevel + 1);
-                
-            //     //for to go next level
-            //     SceneManager.LoadScene(currentLevel + 1);
-            // }
         }
     }
-   
 
+    private void OnTriggerEnter2D(Collider2D col)
+        {
+            FindObjectOfType<Animasi>().AnimasiPopUp();
+            FindObjectOfType<ColorChange>().Update();
+        }
 }

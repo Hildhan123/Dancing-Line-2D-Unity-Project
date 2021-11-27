@@ -14,10 +14,6 @@ public class Score : MonoBehaviour
     {
         scoreText.text = "Score " + Player.position.y.ToString("0");
         scoreText1.text = "Score " + Player.position.y.ToString("0");
-        //y = Player.position.y.ToString("0");
-        //x = (Player.position.x.ToString("0"));
-        //scoreText = x +  y;
-        //Debug.Log(Player.position);
     }
 
 

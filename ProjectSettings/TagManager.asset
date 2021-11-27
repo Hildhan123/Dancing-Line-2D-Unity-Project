@@ -7,6 +7,17 @@ TagManager:
   - Enemy
   - Checkpoint
   - Merah
+  - AnimTrigger
+  - AssetsLain
+  - Bayi
+  - Playground
+  - School
+  - School2
+  - Kuning
+  - birumuda
+  - Putih
+  - Hitam
+  - RIP
   layers:
   - Default
   - TransparentFX
